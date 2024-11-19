@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@keyframes mountains_behind {
+    0% {
+        left: -200px;
+        top: 400px;
+    }
+
+    50% {
+        left: -75px;
+        top: 150px;
+    }
+
+    100% {
+        left: 0;
+        top: 0px;
+    }
+
+}
+
+
+@keyframes mountains_front {
+    0% {
+        opacity: 0;
+        top: 20px
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px
+    }
+}
+
+
+
+@keyframes atext {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes acontent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#mountains_fronts {
+    z-index: 10;
+
+}
+
+
+#btn {
+    text-decoration: none;
+    position: relative;
+    opacity: 80%;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: orange;
+    /* #5d80cb */
+    color: black;
+    font-size: 1.2em;
+    z-index: 9;
+    transform: translateY(120px);
+
+}
+
+
+/* FOOTING */
+footer {
+    width: 100%;
+    /* position: absolute; */
+    top: 100%;
+    /* height: 300px; */
+    background: linear-gradient(120deg, orange, blue);
+}
+
+.footer__container {
+    padding: 20px 0;
+}
+
+.footer__container>ul {
+    display: grid;
+    grid-template-columns: calc(100%/4) calc(100%/4) calc(100%/4) calc(100%/4);
+}
+
+.footer__container>ul>li {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.footer__container h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: var(--primary);
+    border-bottom: 2px solid;
+}
+
+.foot-item-box {
+    text-align: left;
+}
+
+.footer__container>ul>li>ul {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.footer__container>ul>li>ul>li,
+.footer__container>ul>li>ul>li>a {
+    color: var(--primary);
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 20px;
+    list-style: square;
+    text-align: justify;
+}
+
+.footer__container>ul>li>ul>li>a {
+    font-weight: 700;
+}
+
+.footer__container>ul>li:last-child>ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__container>ul>li:last-child>ul>li {
+    list-style: none;
+}
+
+.footer__container>ul>li:last-child>ul>li>i {
+    font-size: 70px;
+    color: var(--button);
+    cursor: pointer;
+}
+
+.footer__container>ul>li:last-child>ul>li>i:hover {
+    color: #ddb6ec;
+}
+
+.footer__container>ul>li>.foot-item-box>li {
+    list-style: none;
+}
+
+.footer__container>ul>li>.foot-item-box>li b,
+.footer__container>ul>li>.foot-item-box>li a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.footer__container>ul>li>.foot-item-box>li a {
+    text-decoration: underline;
+}
+
+#form {
+    text-align: center;
+}
+
+center {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 15px;
+}
+
+#name {
+    position: absolute;
+    text-decoration: none;
+    display: grid;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.2em;
+    z-index: 5;
+    transform: translateY(120px);
+}
+
+section img#mountains_front {
+
+    position: absolute;
+    animation-name: mountains_front;
+    animation-duration: 0.5s;
+
+}
+
+section img#mountains_behind {
+
+    /* changed at 19:58 04-Aug-2022 (L) */
+    position: absolute;
+    animation-name: mountains_behind;
+    animation-duration: 1s;
+
+    /* changed at 19:58 04-Aug-2022 (U) */
+}
+
+#text {
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    z-index: 9;
+    animation-name: atext;
+    animation-duration: 1s;
+
+}
+
+ul li,
+a,
+script#des {
+    animation-name: atext;
+    animation-duration: 1s;
+}
+
+form {
+    animation-name: atext;
+    animation-duration: 1s;
+}
+
+center>form>p {
+    position: absolute;
+    color: white;
+    text-align: justify;
+    size: 2em;
+}
+
+center>div>p {
+    top: 3em;
+    position: absolute;
+    color: white;
+    size: 2em;
+}
+
+center>form>p>a {
+    position: relative;
+    color: yellow;
+    font-size: 18px;
+}
+
+center>div>p>a {
+    position: relative;
+    color: yellow;
+}
+
+#user_name,
+#password {
+    background-color: wheat;
+    color: black;
+    height: 3.5em;
+}
+
+#radio-btn {
+    position: absolute;
+    text-align: center;
+    color: black;
+}
+
+a#url-none {
+    color: yellow;
+    font-size: 12pt;
+}
+
+#datetime-picker {
+    position: relative;
+}
+
+p#purpose {
+    position: relative;
+    text-align: left;
+}
+
+.pokemon__imageContainer {
+    align-items: center;
+}
