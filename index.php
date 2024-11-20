@@ -16,9 +16,9 @@ echo 'hello'
 
 <body>
     <header>
-        <a href="https://topdev.vn/blog/devops-la-gi/" class="logo" target="_blank">what's devops?</a>
+        <a href="https://aws.amazon.com/vi/devops/what-is-devops/" class="logo" target="_blank">Devops là gì?</a>
         <ul>
-            <li><a href="index.php#footer" class="active">Members</a></li>
+            <li><a href="index.php#footer" class="active">Thành Viên</a></li>
             <li><a href="https://github.com/TrHgTung/php_app_deploy" target="_blank">GitHub</a></li>
             <li><a href="./components/getApi.php">Mẫu API</a></li>
             <li><a href="./components/weatherApi.php">Xem Thời Tiết</a></li>
@@ -42,18 +42,15 @@ echo 'hello'
                     <li>
                         <h3>DevOps</h3>
                         <ul class="foot-item-box">
-                            <li>Email: <a href="mailto:tungng14@gmail.com"><b>tungng14@gmail.com</b></a></li>
+                            <li>Email: <a href="mailto:Hongngoc108169@gmail.com"><b>Hongngoc108169@gmail.com</b></a></li>
                         </ul>
                     </li>
                     <li>
-                        <h3>Contact Me: </h3>
+                        <h3>Liên hệ : </h3>
                         <ul>
-                            <li>Facebook: <a href="https://www.facebook.com/nguyentuanhung12345" target="_blank"> Hoàng
-                                    Tùng</a></li> <br />
-                            <li>Facebook: <a href="#" target="_blank"> Như Ý</a></li> <br />
-                            <li>Facebook: <a href="#" target="_blank"> Ánh Tuyết</a></li> <br />
-                            <li>Facebook: <a href="#" target="_blank"> Minh Phát</a></li> <br />
-                            <li>Facebook: <a href="#" target="_blank"> Trọng Hậu</a></li> <br />
+                            <li>Facebook: <a href="https://www.facebook.com/miinee1081699?mibextid=LQQJ4d" target="_blank"> Hồng Ngọc</a></li> <br />
+                            <li>Facebook: <a href="https://www.facebook.com/trhkhanggg710/" target="_blank"> Hoàng
+                                    Khang </a></li> <br />
 
                         </ul>
                     </li>
