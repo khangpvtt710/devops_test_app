@@ -19,7 +19,7 @@ echo 'hello'
         <a href="https://aws.amazon.com/vi/devops/what-is-devops/" class="logo" target="_blank">Devops là gì?</a>
         <ul>
             <li><a href="index.php#footer" class="active">Thành Viên</a></li>
-            <li><a href="https://github.com/khangpvtt710/devops_test_app" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/khangpvtt710/devops_test_app" target="_blank">GitHub Khang</a></li>
             <li><a href="./components/getApi.php">Mẫu API</a></li>
             <li><a href="./components/weatherApi.php">Xem Thời Tiết</a></li>
         </ul>
@@ -28,7 +28,7 @@ echo 'hello'
     <section>
         <img src="images/stars.png" alt="" id="stars">
         <img src="images/mountains_behind.png" alt="" id="mountains_behind">
-        <h2 id="text">xin chào</h2>
+        <h2 id="text">xin chào các bạn đến với nhóm 3</h2>
 
         <a href="components/cat.php" id="btn">to DevOps</a>
         <!-- con meo nhay -->
